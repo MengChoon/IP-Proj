@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>All Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Test.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<div class="s-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images/shoe1.jpg">
+            <h4>Air Jordan XXXVII PF</h4>
+            <p>$219.00</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/shoe2.jpg">
+            <h4>Air Jordan 1 Mid</h4>
+            <p>$209.00</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/shoe3.jpg">
+            <h4>Air Jordan 2 Retro
+            </h4>
+            <p>$285.00</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="images/shoe4.jpg">
+            <h4>Air Jordan 1 High G</h4>
+            <p>$265.00</p>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+<!-----------------------------------------footer-------------------->
+<div class="footer">
+    <div class= "container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p> Download our app for more attractive offers</p>
+                <div class="app-logo">
+                    <img src="images/app-store.png">
+                    <img src="images/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/Logo.jpg">
+                <p> Your Easy Way To shop</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------js------------>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight="200px"
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px"
+            }
+    }
+</script>
+</body>
+
+</html>
