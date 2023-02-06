@@ -24,6 +24,7 @@ $(document).ready(function () {
         alert("Incorrect password.");
       } else {
         alert("Login successful!");
+        window.location.href = "index.html";
       }
     });
   });

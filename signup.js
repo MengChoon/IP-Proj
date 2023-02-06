@@ -18,7 +18,7 @@ $("#update-contact-submit").on("click", function (e) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://projectip-7a75.restdb.io/rest/passwordhttps://projectip-7a75.restdb.io/rest/password",
+        "url": "https://projectip-7a75.restdb.io/rest/password",
         "method": "POST",
         "headers": {
           "content-type": "application/json",
