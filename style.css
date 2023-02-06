@@ -249,6 +249,35 @@ ul{
     margin-left: 20px;
     display: none;
 }
+/*-------------------all product--------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px ;
+}
+select{
+    border:1px solid #FF9900;
+    padding: 5px;
+}
+select:focus{
+    outline:none ;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #5C443E;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #5C443E;
+    color: white;
+}
 /*------------------responsiveness---------*/
 @media only screen and (max-width: 800px){
     nav ul{
@@ -283,16 +312,4 @@ ul{
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
     }
-}
-/*-------------------all product--------*/
-.row-2{
-    justify-content: space-between;
-    margin: 100px auto 50px ;
-}
-select{
-    border:1px solid #FF9900;
-    padding: 5px;
-}
-select:focus{
-    outline:none ;
 }
