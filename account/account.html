@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Account</title>
+        <link rel="stylesheet" href="log.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button"class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button"class="toggle-btn" onclick="register()">Register</button>
+                </div>
+            
+                <form id="login" class="input-grp">
+                    <input type="text" class="input-field" placeholder="User-Id" name="name" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                    <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <form id="register" class="input-grp">
+                    <input type="text" class="input-field" placeholder="User Id" name="name"required>
+                    <input type="text" class="input-field" placeholder="Enter Password" name="password" required>
+                    <input type="email" class="input-field" placeholder="Email" name="email" required>
+                    <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>

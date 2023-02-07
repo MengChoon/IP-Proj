@@ -40,3 +40,5 @@ https://youtu.be/ZbnvP_hmxfE
 https://youtu.be/ENyk_W-Eleo
 https://youtu.be/vOXGuNVRGpA
 https://stackoverflow.com/questions/22363838/submit-form-after-calling-e-preventdefault
+https://www.youtube.com/watch?v=L5WWrGMsnpw&ab_channel=EasyTutorials
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_placeholder

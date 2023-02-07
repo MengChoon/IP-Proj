@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>EasyShop</title>
+    <title>All Product</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@400;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -28,37 +27,18 @@
             <img src="images/cart.png" width="30px" height="30px">
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
-        <div class="row">
-            <div class="col-2">
-                <h1>EasyShop</h1>
-                <p> Your easy way to shop</p>
-                <a href="" class="btn">Explore Now &#10145;</a>
-            </div>
-            <div class="col-2">
-            <img src="images/cover.png">
-            </div>
-        </div>
     </div>
-    </div>
-<!------------------------------------Features------------------------------------->
-<div class="categories">
-    <div class="s-container">
-        <div class="row">
-            <div class="col-3">
-                <img src="images/shop1.jpg">
-            </div>
-            <div class="col-3">
-                <img src="images/shop2.jpg">
-            </div>
-            <div class="col-3">
-                <img src="images/shop3.jpg">
-            </div>
-        </div>
-    </div>
-</div>
-<!----------Recomended------------>
 <div class="s-container">
-    <h2 class="title">Reccomended For You</h2>
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+            <option>Default sorting</option>
+            <option>Sort by price</option>
+            <option>Sort by popularity</option>
+            <option>Sort by rating</option>
+            <option>Sort by sale</option>
+        </select>
+    </div>
     <div class="row">
         <div class="col-4">
             <img src="images/shoe1.jpg">
@@ -110,8 +90,6 @@
             </div>
         </div>
     </div>
-    <!--------------New Releases--------------->
-        <h2 class="title">New Releases</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/new1.jpg">
@@ -213,94 +191,15 @@
                 </div>
             </div>
         </div>
-</div>
-<!----------------offers----------------->
-<div class="offer">
-    <div class="s-container">
-        <div class="row">
-            <div class="col-2">
-                <img src="images/head.jpg" class="offer-img">
-            </div>
-            <div class="col-2">
-                <p> The Brand New</p>
-                <h1>Code 11.59 by Audemars Piguet Starwheel</h1>
-                <small>The Code 11.59 by Audemars Piguet Starwheel revisits the tradition of wandering hours with a new ultra-contemporary timepiece that combines black ceramic with 18-carat white gold.</small>
-                <a href="" class="btn-2"> Buy Now &#8594;</a>
-            </div>
-        </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
     </div>
 </div>
-<!---------------------------testimonial----------------->
-<div class="test">
-    <div class="s-container">
-        <div class="row">
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Amazing place to shop!</p>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <img src="images/review.jpg">
-                <h3>Blue shirt</h3>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Laza what? EasyShop ftw!</p>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <img src="images/review2.jpg">
-                <h3>Nice white women</h3>
-            </div>
-            <div class="col-3">
-                <i class="fa fa-quote-left"></i>
-                <p>Got my piercings here. thats wassup.</p>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <img src="images/review3.jpg">
-                <h3>Spikeface</h3>
-            </div>
-        </div>
-        
-    </div>
     
-</div>
-<!----------------------------------Brands------------------->
-<div class="brands">
-    <div class="s-container">
-        <div class="row">
-            <div class="col-5">
-                <img src="images/logo-godrej.png">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-oppo.png">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-paypal.png">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-philips.png">
-            </div>
-            <div class="col-5">
-                <img src="images/logo-coca-cola.png">
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-----------------------------------------footer-------------------->
 <div class="footer">
     <div class= "container">
@@ -339,20 +238,7 @@
     </div>
 </div>
 <!------------------js------------>
-<script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight="0px";
-    function menutoggle(){
-        if(menuitems.style.maxHeight=="0px")
-            {
-                menuitems.style.maxHeight="200px"
-            }
-        else
-            {
-                menuitems.style.maxHeight="0px"
-            }
-    }
-</script>
+<script src="index.js"></script>
 </body>
 
 </html>
