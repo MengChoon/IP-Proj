@@ -23,7 +23,7 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #D1C0AA;
+    box-shadow: 0 0 20px 9px #FF9900;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -40,7 +40,7 @@
     position: absolute;
     width:110px;
     height: 100%;
-    background: linear-gradient(to right,#D1C0AA,#A5907C);
+    background: linear-gradient(to right,#A5907C,#5C443E);
     border-radius: 30px;
     transition: .5s;
 }
@@ -67,7 +67,7 @@
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right,#D1C0AA,#A5907C );
+    background: linear-gradient(to right,#A5907C,#5C443E);
     border: 0;
     outline: none;
     border-radius: 30px;
