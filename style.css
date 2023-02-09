@@ -353,6 +353,90 @@ td img{
     height: 80px;
     margin-right: 10px;
 }
+
+/*------------------Contact section---------*/
+.contact-container{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding:40px;
+    background: #A5907C;
+}
+.contact-container h1{
+    margin-bottom: 10px;
+}
+.contact-container p{
+    margin-bottom: 40px;
+}
+.contact-input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-input-row .contact-input-grp{
+    flex-basis: 45%;
+}
+.contact-form input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact-form label{
+    margin-bottom: 6px;
+    display: block;
+    color: #204de2;
+}
+.contact-left h3{
+    color: #204de2;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.contact-right tr td:first-child{
+    padding-right: 20px;
+}
+.contact-right tr td{
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------responsiveness---------*/
 @media only screen and (max-width: 800px){
     nav ul{
@@ -397,4 +481,30 @@ td img{
         font-size: 26px;
         line-height: 26px;
     }
+    .contact-container {
+        width: 95%;
+  }
+  .contact-box {
+        flex-direction: column;
+  }
+  .contact-left {
+        flex-basis: 100%;
+        padding: 40px;
+  }
+  .contact-right {
+        flex-basis: 100%;
+        padding: 40px;
+        margin-top: 40px;
+  }
+  .contact-container h4 p{
+    padding-left: 400px;
+  }
+  .un{
+    padding-left: 40px;
+  }
 }
+
+
+
+
+

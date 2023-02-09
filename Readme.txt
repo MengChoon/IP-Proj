@@ -26,7 +26,7 @@ https://restfulapi.net/
 https://www.tutorialspoint.com/restful/index.htm
 https://www.w3schools.com/js/js_json_intro.asp
 https://www.youtube.com/watch?v=Ba-Ly1EQg2A&ab_channel=CemEygiMedia
-W3Schools CSS Tutorial: https://www.w3schools.com/css/
+https://www.w3schools.com/css/
 https://developer.mozilla.org/en-US/docs/Web/CSS
 https://css-tricks.com/
 https://www.codecademy.com/learn/learn-css
@@ -42,3 +42,4 @@ https://youtu.be/vOXGuNVRGpA
 https://stackoverflow.com/questions/22363838/submit-form-after-calling-e-preventdefault
 https://www.youtube.com/watch?v=L5WWrGMsnpw&ab_channel=EasyTutorials
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_placeholder
+https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials

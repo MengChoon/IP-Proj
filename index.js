@@ -39,35 +39,38 @@ if (Smallimg.length > 0) {
   }
 }
 /*******cart************* */
-// Store the item in the local storage
-localStorage.setItem("itemName", JSON.stringify(item));
+const form = document.querySelector('.contact-form');
 
-// Retrieve the item from the local storage
-let retrievedItem = JSON.parse(localStorage.getItem("itemName"));
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+});
 
-// Loop through the retrieved items and create HTML elements to display the information
-for (let i = 0; i < retrievedItem.length; i++) {
-let itemName = retrievedItem[i].name;
-let itemPrice = retrievedItem[i].price;
-let itemImage = retrievedItem[i].image;
+async function SubmitContact() {
+  const data = {
+    name: document.getElementById('name').value,
+    number: document.getElementById('number').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value
+  };
 
-// Create the HTML elements and set their properties
-let itemContainer = document.createElement("div");
-itemContainer.className = "cart-item";
+  const response = await fetch('https://dogstastelikechicken-8d4e.restdb.io/rest/callmemaybe', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-apikey': '63b78b14969f06502871ab0d'
+    },
+    body: JSON.stringify(data)
+  });
 
-let itemImageElement = document.createElement("img");
-itemImageElement.src = itemImage;
-itemImageElement.alt = itemName;
-itemContainer.appendChild(itemImageElement);
-
-let itemNameElement = document.createElement("p");
-itemNameElement.innerHTML = itemName;
-itemContainer.appendChild(itemNameElement);
-
-let itemPriceElement = document.createElement("p");
-itemPriceElement.innerHTML = "$" + itemPrice;
-itemContainer.appendChild(itemPriceElement);
-
-// Add the HTML elements to the page
-document.getElementById("cart-container").appendChild(itemContainer);
+  if (response.ok) {
+    console.log('Message sent successfully');
+  } else {
+    console.error('Failed to send message');
+  }
+  if (response.ok) {
+    alert('Message sent successfully');
+  } else {
+    alert('Failed to send message');
+  }
 }
