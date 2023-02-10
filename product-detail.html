@@ -24,52 +24,57 @@
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px">
+            <div class="emo">
+                <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px" >
+                </a>
+            </div>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
     <!------------sinlge product---------->
-<div class="single-product">
-    <div class="s-container">
-        <div class="row">
-            <div class="col-2">
-                <img src="images/shoe1.jpg" width="100%" id="Productimg">
-                <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="images/shoe1.jpg" width="100%" class="small-img">
-                    </div>  
-                    <div class="small-img-col">
-                        <img src="images/view1.jpg" width="100%" class="small-img">
-                    </div>  
-                    <div class="small-img-col">
-                        <img src="images/view2.jpg" width="100%" class="small-img"> 
-                    </div>  
-                    <div class="small-img-col">
-                        <img src="images/view3.jpg" width="100%" class="small-img">
-                    </div>  
-                </div>
-            </div>  
-            <div class="col-2">
-                <p>Home / T-shirt</p>
-                <h1>Air Jordan XXXVII PF</h1>
-                <h4>$219.00</h4>
-                <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
-                </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
-                <h3>Product Details</i></h3>
-                <br>
-                <p>You've got the hops and the speed—lace up in shoes that enhance what you bring to the court. The latest AJ is all about take-offs and landings, with multiple Air units to get you off the ground and Formula 23 foam to cushion your impact. The upper is made from strong, reinforced leno-weave fabric that'll keep you contained and leave your game uncompromised, no matter how fast you move.</p>
-            </div>
+    <div class="single-product">
+  <div class="s-container">
+    <div class="row">
+      <div class="col-2">
+        <img src="images/shoe1.jpg" width="100%" id="Productimg">
+        <div class="small-img-row">
+          <div class="small-img-col">
+            <img src="images/shoe1.jpg" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/view1.jpg" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/view2.jpg" width="100%" class="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="images/view3.jpg" width="100%" class="small-img">
+          </div>
         </div>
+      </div>
+      <div class="col-2">
+        <p>Home / T-shirt</p>
+        <h1 id="item-name">Air Jordan XXXVII PF</h1>
+        <h4 id="price">$219.00</h4>
+        <select id="size">
+          <option>Select Size</option>
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Large</option>
+          <option>Medium</option>
+          <option>Small</option>
+        </select>
+        <input type="number" id="number" value="1">
+        <a href="" class="btn" id="card.btn">Add To Cart</a>
+        <h3>Product Details</i></h3>
+        <br>
+        <p>You've got the hops and the speed—lace up in shoes that enhance what you bring to the court. The latest AJ is all about take-offs and landings, with multiple Air units to get you off the ground and Formula 23 foam to cushion your impact. The upper is made from strong, reinforced leno-weave fabric that'll keep you contained and leave your game uncompromised, no matter how fast you move.</p>
+      </div>
     </div>
+  </div>
 </div>
+
 <!------------Related------>
 <div class="s-container">
     <div class="row row-2">
@@ -169,7 +174,7 @@
     </div>
 </div>
 <!------------------js------------>
-<script src="index.js"></script>
+<script src="cart.js"></script>
 </body>
 
 </html>

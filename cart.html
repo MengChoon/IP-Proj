@@ -24,35 +24,57 @@
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <img src="images/cart.png" width="30px" height="30px">
+            <div class="emo">
+                <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px" >
+                </a>
+            </div>
+
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
     <!------------Cart items---------->
     <div class="s-container cart-page">
         <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td> 
-                    <div class="cart-info">
-                        <img src="images/shoe1.jpg">
-                        <div>
-                            <p>Air Jordan XXXVII PF</p>
-                            <small>Price: $219.00</small>
-                            <br>
-                            <a href=""> Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type = "number" value="1"></td>
-                <td>Price: $219.00</td>
-            </tr>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tbody id="cart-items"></tbody>
         </table>
-    </div>
+      </div>
+      
+      <script>
+      window.onload = function() {
+        if (localStorage.getItem("products")) {
+          const products = JSON.parse(localStorage.getItem("products"));
+          const cartItemsContainer = document.getElementById("cart-items");
+      
+          for (const product of products) {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>
+                <div class="cart-info">
+                  <img src="images/shoe1.jpg">
+                  <div>
+                    <p>${product.itemName}</p>
+                    <small>Price: $${product.price}</small>
+                    <br>
+                    <a href="#">Remove</a>
+                  </div>
+                </div>
+              </td>
+              <td><input type="number" value="${product.number}"></td>
+              <td>Price: $${product.price}</td>
+            `;
+      
+            cartItemsContainer.appendChild(tr);
+          }
+        }
+      };
+      </script>
+      
 <!------------Related------>
 
 <!-----------------------------------------footer-------------------->
