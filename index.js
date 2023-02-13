@@ -38,7 +38,7 @@ if (Smallimg.length > 0) {
     }
   }
 }
-/*******cart************* */
+/*******contact************* */
 const form = document.querySelector('.contact-form');
 form.addEventListener("submit", function(event) {
   event.preventDefault();
@@ -73,3 +73,4 @@ async function SubmitContact() {
     alert('Failed to send message');
   }
 }
+/***test */

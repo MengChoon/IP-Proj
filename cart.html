@@ -20,7 +20,7 @@
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
@@ -35,22 +35,36 @@
     </div>
     <!------------Cart items---------->
     <div class="s-container cart-page">
-        <table>
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-          </tr>
-          <tbody id="cart-items"></tbody>
-        </table>
-      </div>
-      
-      <script>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tbody id="cart-items"></tbody>
+      </table>
+    </div>
+    
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Tax</td>
+          <td id="tax"></td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td id="total"></td>
+        </tr>
+      </table>
+    </div>
+    
+    <script>
       window.onload = function() {
         if (localStorage.getItem("products")) {
-          const products = JSON.parse(localStorage.getItem("products"));
+          let products = JSON.parse(localStorage.getItem("products"));
           const cartItemsContainer = document.getElementById("cart-items");
-      
+          let subtotal = 0;
+    
           for (const product of products) {
             const tr = document.createElement("tr");
             tr.innerHTML = `
@@ -66,15 +80,32 @@
                 </div>
               </td>
               <td><input type="number" value="${product.number}"></td>
-              <td>Price: $${product.price}</td>
+              <td>$${(product.price * product.number).toFixed(2)}</td>
             `;
-      
+    
+            const removeBtn = tr.querySelector("a");
+            removeBtn.addEventListener("click", function() {
+              products = products.filter(function(p) {
+                return p.itemName !== product.itemName;
+              });
+    
+              localStorage.setItem("products", JSON.stringify(products));
+              tr.remove();
+            });
+    
+            subtotal += product.price * product.number;
             cartItemsContainer.appendChild(tr);
           }
+    
+          const tax = subtotal * 0.08;
+          const total = subtotal + tax;
+    
+          document.getElementById("tax").innerText = "$" + tax.toFixed(2);
+          document.getElementById("total").innerText = "$" + total.toFixed(2);
         }
       };
-      </script>
-      
+    </script>
+    
 <!------------Related------>
 
 <!-----------------------------------------footer-------------------->

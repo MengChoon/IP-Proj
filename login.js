@@ -12,7 +12,8 @@ function login(){
   x.style.left = "50px ";
   y.style.left = "450px";
   z.style.left = "0";
-}const registerForm = document.getElementById('register');
+}
+const registerForm = document.getElementById('register');
 registerForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = registerForm.elements.name.value;

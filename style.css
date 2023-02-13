@@ -354,6 +354,23 @@ td img{
     margin-right: 10px;
 }
 
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 250px;
+}
+.total-price table{
+    border-top: 3px solid #5C443E;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
 /*------------------Contact section---------*/
 .contact-container{
     width: 80%;
@@ -502,7 +519,10 @@ td img{
   .un{
     padding-left: 40px;
   }
+  .total-price {
+    padding-right: 250px;
 }
+  }
 
 
 
