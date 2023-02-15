@@ -98,3 +98,15 @@ loginForm.addEventListener('submit', (event) => {
 
   request.send();
 });
+/*********lottie */
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('animation'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://lottie.host/511c4495-f98a-451d-9375-f04116c7e405/ACgdXP5Y97.json'
+});
+const animationContainer = document.getElementById('animation');
+animationContainer.addEventListener('click', () => {
+  window.location.href = 'index.html';
+});

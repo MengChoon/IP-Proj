@@ -44,3 +44,4 @@ https://www.youtube.com/watch?v=L5WWrGMsnpw&ab_channel=EasyTutorials
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_placeholder
 https://www.youtube.com/watch?v=orBQesFBkXg&ab_channel=EasyTutorials
 https://www.youtube.com/watch?v=3yfswsnD2sw&ab_channel=KevinPowell
+https://lottiefiles.com/3616-shopping-bag
