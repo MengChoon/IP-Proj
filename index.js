@@ -74,3 +74,8 @@ async function SubmitContact() {
   }
 }
 /***test */
+const accountLink = document.getElementById("accountLink");
+
+if (localStorage.getItem("username")) {
+  accountLink.href = "logged-in.html";
+}

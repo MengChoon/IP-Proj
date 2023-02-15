@@ -11,38 +11,46 @@
 </head>
 <body>
     <div class="header">
-    <div class="container">
-        <div class="navbar">
+        <div class="container">
+          <div class="navbar">
             <div class="logo">
-                <img src="" width="125px">
+              <img src="" width="125px">
             </div>
             <nav>
-                <ul id="menuitems">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
+              <ul id="menuitems">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="accountLink" href="account.html">Account</a></li>
+              </ul>
             </nav>
+            <script>
+            const accountLink = document.getElementById("accountLink");
+
+                if (localStorage.getItem("username")) {
+                  accountLink.href = "logged-in.html";
+                }
+                </script>
             <div class="emo">
-                <a href="cart.html">
+              <a href="cart.html">
                 <img src="images/cart.png" width="30px" height="30px" >
-                </a>
+              </a>
             </div>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-        </div>
-        <div class="row">
+          </div>
+          <div class="row">
             <div class="col-2">
-                <h1>EasyShop</h1>
-                <p> Your easy way to shop</p>
-                <a href="" class="btn">Explore Now &#10145;</a>
+              <h1>EasyShop</h1>
+              <p> Your easy way to shop</p>
+              <a href="" class="btn">Explore Now &#10145;</a>
             </div>
             <div class="col-2">
-            <img src="images/cover.png">
+              <img src="images/cover.png">
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
 <!------------------------------------Features------------------------------------->
 <div class="categories">

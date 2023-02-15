@@ -13,6 +13,7 @@ function login(){
   y.style.left = "450px";
   z.style.left = "0";
 }
+
 const registerForm = document.getElementById('register');
 registerForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -50,7 +51,9 @@ registerForm.addEventListener('submit', (event) => {
   };
 
   request.send(JSON.stringify({ name, password, email }));
-});const loginForm = document.getElementById('login');
+});
+
+const loginForm = document.getElementById('login');
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = loginForm.elements.name.value;
@@ -79,6 +82,8 @@ loginForm.addEventListener('submit', (event) => {
       }
       console.log('Login successful');
       alert('Login successful');
+      // Save username to local storage
+      localStorage.setItem('username', name);
       window.location.href = 'index.html';
     } else {
       console.error('Login failed');
