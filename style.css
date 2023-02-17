@@ -370,7 +370,12 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
-
+.payment {
+    display: flex;
+    justify-content: flex-end;
+    margin: 80px;
+  }
+  
 /*------------------Contact section---------*/
 .contact-container{
     width: 80%;
