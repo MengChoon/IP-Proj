@@ -23,6 +23,9 @@ Features Left to Implement:
 payment method was not added as i felt it was not necessary for the project
 
 
+Github link:
+https://github.com/MengChoon/IP-Proj
+
 
 
 
